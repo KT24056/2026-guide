@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.cafe-scene {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 棒人間の画像 */
+#cafe-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background-color: #bfbfbf;
+    cursor: pointer;
+}
+
+/* EXIT看板 */
+.exit-button {
+    position: absolute;
+    top: 25%;
+    left: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.cafe-link img {
+    display: block;
+    width: 150px;
+    height: auto;
+}
+
+
+/* スマホ */
+@media screen and (max-width: 768px) {
+
+    #cafe-image {
+        object-fit: contain;
+    }
+
+    .exit-button {
+        top: 42%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+
+    .exit-button img {
+        width: 70px;
+    }
+}
